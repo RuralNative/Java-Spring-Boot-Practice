@@ -1,12 +1,9 @@
-package com.springboot.sqlite;
- 
 import java.sql.Types;
  
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.StandardSQLFunction;
 import org.hibernate.dialect.function.SQLFunctionTemplate;
 import org.hibernate.dialect.function.VarArgsSQLFunction;
-import org.hibernate.Hibernate;
 import org.hibernate.type.StringType;
  
 public class SQLDialect extends Dialect {
