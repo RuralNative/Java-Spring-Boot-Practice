@@ -1,10 +1,25 @@
 package com.example.userform.webapp.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Student")
+
 public class Student {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String name;
-    String course;
-    int yearLevel;
-    char classSection;
+    private String course;
+    private int yearLevel;
+    private char classSection;
+
+    protected Student() {}
 
     protected String getName() {
         return this.name;
