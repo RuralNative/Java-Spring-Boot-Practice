@@ -19,37 +19,37 @@ public class Student {
     private int yearLevel;
     private char classSection;
 
-    protected Student() {}
+    public Student() {}
 
-    protected String getName() {
+    public String getName() {
         return this.name;
     }
 
-    protected void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    protected String getCourse() {
+    public String getCourse() {
         return this.course;
     }
 
-    protected void setCourse(String course) {
+    public void setCourse(String course) {
         this.course = course;
     }
 
-    protected int getYearLevel() {
+    public int getYearLevel() {
         return this.yearLevel;
     }
 
-    protected void setYearLevel(int yearLevel) {
+    public void setYearLevel(int yearLevel) {
         this.yearLevel = yearLevel;
     }
 
-    protected char getClassSection() {
+    public char getClassSection() {
         return this.classSection;
     }
 
-    protected void setClassSection(char classSection) {
+    public void setClassSection(char classSection) {
         this.classSection = classSection;
     }
 }
